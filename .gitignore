@@ -1,0 +1,11 @@
+.gitattributes
+.editorconfig
+node_modules
+temp
+dist
+.sass-cache
+app/components
+.DS_Store
+.idea/
+.tmp/
+

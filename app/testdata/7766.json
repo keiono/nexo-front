@@ -1,0 +1,10 @@
+{
+    "def": "CC_def:  | BP_def: Any process that establishes the spatial arrangement of nuclear pores within the nuclear envelope. | MF_def:",
+    "term name": "CC:  | BP: nuclear pore distribution | MF:",
+    "name": "NeXO:7766",
+    "comment": "robustness:0 density:0 bootstrap:0.294350178 cc_score:0.0 bp_score:0.126494 mf_score:0.0",
+    "shared name": "NeXO:7766",
+    "namespace": "NeXO",
+    "_id": 3449,
+    "_type": "vertex"
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#" name="top">NeXO</a>
+
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Web Service API</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="hero-unit">
+        <h1>NeXO</h1>
+
+        <p>
+            <small>A gene ontology inferred from molecular networks</small>
+        </p>
+
+        <form method="search" action="#" class="form-inline">
+            <input id="search-term" name="query" class="span9" type="text" placeholder="Type Keyword or NeXO Term ID...">
+            <button id="search" type="button" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+
+    <table id="result" class="table table-striped" ></table>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <small>
+                    Code licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>,
+                    documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+                </small>
+            </p>
+        </div>
+    </footer>
+
+
+    <script id="termTemplate" type="text/template">
+        <ul>
+            <li><%= id %></li>
+            <li><%= description %></li>
+            <li><%= robustness %></li>
+        </ul>
+
+        <button class="delete">Go</button>
+    </script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        var _gaq = [
+            ['_setAccount', 'UA-XXXXX-X'],
+            ['_trackPageview']
+        ];
+        (function (d, t) {
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s)
+        }(document, 'script'));
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="components/underscore/underscore-min.js"></script>
+    <script src="components/backbone/backbone-min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/models/nexo_term.js"></script>
+    <script src="scripts/collections/nexo_terms.js"></script>
+    <script src="scripts/views/nexo_term.js"></script>
+    <script src="scripts/views/nexo_terms.js"></script>
+
+    <script src="scripts/nexo.js"></script>
+
+    <script src="scripts/templates.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

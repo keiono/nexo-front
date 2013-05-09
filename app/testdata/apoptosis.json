@@ -1,0 +1,52 @@
+[
+    {
+        "def": "CC_def: Any dynein complex that catalyzes movement along a cytoplasmic microtubule; cytoplasmic dynein complexes participates in many transport activities in eukaryotes, such as mRNA localization, intermediate filament transport, nuclear envelope breakdown, apoptosis, transport of centrosomal proteins, mitotic spindle assembly, virus transport, kinetochore functions, and movement of signaling and spindle checkpoint proteins. Subunits associated with the dynein heavy chain mediate association between dynein heavy chain and cargoes,and may include light chains and light intermediate chains. | BP_def: Catalysis of movement along a microtubule, coupled to the hydrolysis of a nucleoside triphosphate (usually ATP). | MF_def:Catalysis of movement along a microtubule, coupled to the hydrolysis of a nucleoside triphosphate (usually ATP).",
+        "term name": "CC: cytoplasmic dynein complex | BP: microtubule motor activity | MF:microtubule motor activity",
+        "name": "NeXO:7321",
+        "comment": "robustness:5.10623065939893 density:1 bootstrap:0.720054589 cc_score:0.305632 bp_score:0.238636 mf_score:0.245035",
+        "shared name": "NeXO:7321",
+        "namespace": "NeXO",
+        "_id": 388,
+        "_type": "vertex"
+    },
+    {
+        "def": "CC_def: A highly compacted molecule of DNA and associated proteins resulting in a cytologically distinct structure that remains in the nucleus. | BP_def: The progressive compaction of dispersed interphase chromatin into threadlike chromosomes prior to mitotic or meiotic nuclear division, or during apoptosis, in eukaryotic cells. | MF_def:",
+        "term name": "CC: condensed nuclear chromosome | BP: chromosome condensation | MF:",
+        "name": "NeXO:9565",
+        "comment": "robustness:5.79036529863243 density:0.116923076923077 bootstrap:0.29039565 cc_score:0.112844 bp_score:0.146994 mf_score:0.0",
+        "shared name": "NeXO:9565",
+        "namespace": "NeXO",
+        "_id": 2973,
+        "_type": "vertex"
+    },
+    {
+        "def": "CC_def:  | BP_def: Any process that activates or increases the frequency, rate or extent of cell death by apoptosis. | MF_def:Catalysis of an oxidation-reduction (redox) reaction in which NADH or NADPH acts as a hydrogen or electron donor and reduces a quinone or a similar acceptor molecule.",
+        "term name": "CC:  | BP: positive regulation of apoptosis | MF:oxidoreductase activity, acting on NADH or NADPH, quinone or similar compound as acceptor",
+        "name": "NeXO:6194",
+        "comment": "robustness:1.87314218190153 density:0.333333333333333 bootstrap:0.71042879 cc_score:0.0 bp_score:0.162179 mf_score:0.271019",
+        "shared name": "NeXO:6194",
+        "namespace": "NeXO",
+        "_id": 2990,
+        "_type": "vertex"
+    },
+    {
+        "def": "CC_def:  | BP_def: A process which directly inhibits any of the steps required for cell death by apoptosis. | MF_def:",
+        "term name": "CC:  | BP: anti-apoptosis | MF:",
+        "name": "NeXO:7997",
+        "comment": "robustness:2.27299963350827 density:1 bootstrap:0.856092275 cc_score:0.0 bp_score:0.219852 mf_score:0.0",
+        "shared name": "NeXO:7997",
+        "namespace": "NeXO",
+        "_id": 3862,
+        "_type": "vertex"
+    },
+    {
+        "def": "CC_def:  | BP_def: The cleavage of DNA during apoptosis, which usually occurs in two stages: cleavage into fragments of about 50 kbp followed by cleavage between nucleosomes to yield 200 bp fragments. | MF_def:Catalysis of the sequential cleavage of mononucleotides from a free 3' terminus of a DNA molecule.",
+        "term name": "CC:  | BP: DNA fragmentation involved in apoptotic nuclear change | MF:3'-5'-exodeoxyribonuclease activity",
+        "name": "NeXO:7983",
+        "comment": "robustness:1.79162535875219 density:1 bootstrap:0.53188317 cc_score:0.0 bp_score:0.439776 mf_score:0.135195",
+        "shared name": "NeXO:7983",
+        "namespace": "NeXO",
+        "_id": 3984,
+        "_type": "vertex"
+    }
+]
