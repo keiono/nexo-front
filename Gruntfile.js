@@ -104,7 +104,6 @@ module.exports = function (grunt) {
             all: [
                 'Gruntfile.js',
                 '<%= yeoman.app %>/scripts/{,*/}*.js',
-                '!<%= yeoman.app %>/scripts/vendor/*',
                 'test/spec/{,*/}*.js'
             ]
         },
@@ -159,8 +158,13 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= yeoman.dist %>/scripts/main.js': [
-                        '<%= yeoman.app %>/scripts/{,*/}*.js'
+                        '<%= yeoman.app %>/scripts/{,*/}*.js',
+                        '!<%= yeoman.app %>/scripts/nexoview.js'
                     ],
+                    '<%= yeoman.dist %>/scripts/result.js': [
+                        '<%= yeoman.app %>/scripts/{,*/}*.js',
+                        '!<%= yeoman.app %>/scripts/nexo.js'
+                    ]
                 }
             }
         },

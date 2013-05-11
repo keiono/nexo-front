@@ -36,3 +36,86 @@ footer {
   font-weight: 400;
   margin-bottom: 10px;
 }
+
+.network-view {
+  height: 30em;
+  border: 2px solid #888;
+  overflow: hidden !important;
+  border-radius: 0.55em;
+  margin-top: 1em;
+  color: darkgray;
+  font-weight: 100;
+  width: 100%;
+}
+
+// For D3-DAG renderer
+.svg-view {
+  height: 750px;
+  border: 2px solid #777;
+  overflow: hidden !important;
+  border-radius: 0.65em;
+  margin-top: 3.5em;
+  margin-bottom: 0.5em;
+  color: darkgray;
+  font-weight: 100;
+  width: 55%;
+  float: left;
+}
+
+#tabs {
+  width: 43%;
+  float: right;
+  height: 750px;
+  margin-top: 3.5em;
+  border: 0;
+}
+
+#summary-table {
+  font-weight: 300;
+  margin: 0;
+  color: #333333;
+  font-size: 12px;
+}
+
+.node rect {
+  stroke-width: 2px;
+  stroke: #555;
+  fill: #fff;
+}
+
+#node-CLOSED rect {
+  stroke-width: 3px;
+  fill: #f88;
+}
+
+.node text {
+  font: 300 18px "Helvetica Neue";
+}
+
+.node:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+path.edge {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2px;
+}
+
+.edge:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.node rect {
+  stroke-width: 1.5px;
+  stroke: #555;
+  fill: #fff;
+}
+
+path.edge {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2px;
+}

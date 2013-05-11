@@ -12,7 +12,7 @@ $(function () {
         console.log("Search start! FORM = " + searchTerm);
 
         // Clear current rows
-        $("#result").empty();
+        $("#result").fadeOut(1000).empty();
 
         $.getJSON("/search/nexo/" + searchTerm, function (json) {
 
