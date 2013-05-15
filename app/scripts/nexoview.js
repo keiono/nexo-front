@@ -20,8 +20,6 @@ $(function () {
         console.log("len: \n" + json.length);
 
         // Create score
-
-
         $("#summary-tab").append("<h3>" + json.name + "</h3>");
         $("#summary-tab").append("<table id='summary-table' class='table table-striped'></table>");
         $("#summary-table").append("<tr><td>Name</td><td>" + json["term name"] + "</td></tr>");

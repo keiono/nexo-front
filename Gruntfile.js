@@ -104,6 +104,7 @@ module.exports = function (grunt) {
             all: [
                 'Gruntfile.js',
                 '<%= yeoman.app %>/scripts/{,*/}*.js',
+                '!<%= yeoman.app %>/scripts/vendor/*.js',
                 'test/spec/{,*/}*.js'
             ]
         },
@@ -155,10 +156,14 @@ module.exports = function (grunt) {
         },
         
         uglify: {
+            options: {
+                mangle: false
+            },
             dist: {
                 files: {
                     '<%= yeoman.dist %>/scripts/main.js': [
                         '<%= yeoman.app %>/scripts/{,*/}*.js',
+                        '!<%= yeoman.app %>/scripts/render_dag.js',
                         '!<%= yeoman.app %>/scripts/nexoview.js'
                     ],
                     '<%= yeoman.dist %>/scripts/result.js': [
